@@ -5,17 +5,15 @@ import Link from 'next/link';
 const Header: React.FC = () => {
   const [color, setColor] = useState("#FFFFFF");
 
-  // Возможные цвета
-  const colors = ["#FF00FF", "#FFFF00", "#00FF00", "#0000FF"]; // Розовый, Жёлтый, Зелёный, Синий
+  const colors = ["#FF00FF", "#FFFF00", "#00FF00", "#0000FF"]; 
 
-  // Меняем цвет текста каждую секунду
   useEffect(() => {
     const interval = setInterval(() => {
       const randomColor = colors[Math.floor(Math.random() * colors.length)];
       setColor(randomColor);
     }, 1000);
 
-    return () => clearInterval(interval); // Очищаем интервал при размонтировании
+    return () => clearInterval(interval); 
   }, []);
 
   return (

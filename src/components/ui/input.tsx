@@ -17,7 +17,7 @@ const CoincContainer: React.FC<ButtonProps> = ({ text, onClick, disabled = false
 
   const onSubmit: SubmitHandler<FormInputs> = (data) => {
     console.log("Search value:", data.search);
-    reset(); // Сбрасываем значение после отправки
+    reset(); 
   };
 
   return (

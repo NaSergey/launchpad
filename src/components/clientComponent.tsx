@@ -28,7 +28,7 @@ const ClientComponent = ({ data }: ClientComponentProps) => {
       <Header />
       <CreateCoin />
       <div className="flex items-center flex-col justify-center w-full">
-        <CoinContainer id="12425" name="№1" symbol="TRUMP" description="absd" createdBy="" />
+        <CoinContainer id="12425" name="№1" symbol="TRUMP" description="absd" />
         <div className="pt-4">
           <Input text="Search" />
         </div>

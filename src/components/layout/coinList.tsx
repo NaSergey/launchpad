@@ -6,7 +6,6 @@ import type { RootState } from '@/store/store';
 const CoinList: React.FC = () => {
   const coins = useSelector((state: RootState) => state.coins.coins);
 
-  // Обрезаем массив, чтобы отображать не более 24 элементов
   const limitedCoins = coins.slice(0, 24);
 
   return (
